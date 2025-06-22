@@ -1,6 +1,6 @@
 services:
   currency-exchange:
-    image: pratyushud/exchange-service:0.0.1-SNAPSHOT
+    image: pratyushud/exchange-service:0.0.1-RELEASE
     ports:
       - "8000:8000"
     networks:
@@ -13,7 +13,7 @@ services:
       SPRING.ZIPKIN.BASE-URL: http://zipkin-server:9411/
 
   currency-converter:
-    image: pratyushud/conversion-service:0.0.1-SNAPSHOT
+    image: pratyushud/conversion-service:0.0.1-RELEASE
     ports:
       - "8100:8100"
     networks:
@@ -25,7 +25,7 @@ services:
       SPRING.ZIPKIN.BASE-URL: http://zipkin-server:9411/
 
   gateway-server:
-    image: pratyushud/gateway-service:0.0.1-SNAPSHOT
+    image: pratyushud/gateway-service:0.0.1-RELEASE
     ports:
       - "8765:8765"
     networks:
@@ -35,7 +35,7 @@ services:
       SPRING.ZIPKIN.BASE-URL: http://zipkin-server:9411/
 
   naming-server:
-    image: pratyushud/naming-service:0.0.1-SNAPSHOT
+    image: pratyushud/naming-service:0.0.1-RELEASE
     ports:
       - "8761:8761"
     networks:
