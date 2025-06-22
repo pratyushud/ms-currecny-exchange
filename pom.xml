@@ -10,7 +10,7 @@
 	</parent>
 	<groupId>com.pd.currency</groupId>
 	<artifactId>exchange</artifactId>
-	<version>0.0.1-SNAPSHOT</version>
+	<version>0.0.1-RELEASE</version>
 	<name>exchange</name>
 	<description>Currency Exchange</description>
 	<url/>
@@ -118,7 +118,7 @@
 				<artifactId>spring-boot-maven-plugin</artifactId>
 				<configuration>
 					<image>
-						<name>currency/exchange-service:${project.version}</name>
+						<name>pratyushud/exchange-service:${project.version}</name>
 					</image>
 					<pullPolicy>IF_NOT_PRESENT</pullPolicy>
 					<excludes>
