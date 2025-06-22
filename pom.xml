@@ -10,7 +10,7 @@
 	</parent>
 	<groupId>com.pd.currency</groupId>
 	<artifactId>exchange</artifactId>
-	<version>0.0.1-RELEASE</version>
+	<version>0.0.11-RELEASE</version>
 	<name>exchange</name>
 	<description>Currency Exchange</description>
 	<url/>
@@ -47,10 +47,10 @@
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-actuator</artifactId>
 		</dependency>
-		<dependency>
+		<!--<dependency>
 			<groupId>org.springframework.cloud</groupId>
 			<artifactId>spring-cloud-starter-netflix-eureka-client</artifactId>
-		</dependency>
+		</dependency>-->
 
 		<dependency>
 			<groupId>com.mysql</groupId>
@@ -67,16 +67,16 @@
 			<artifactId>spring-boot-starter-test</artifactId>
 			<scope>test</scope>
 		</dependency>
-		<dependency>
+		<!--<dependency>
 			<groupId>io.micrometer</groupId>
 			<artifactId>micrometer-observation</artifactId>
-		</dependency>
+		</dependency>-->
 
 		<!-- OPTION 1: Open Telemetry as Bridge (RECOMMENDED) -->
 		<!-- Open Telemetry
             - Simplified Observability (metrics, logs, and traces) -->
 
-		<dependency>
+		<!--<dependency>
 			<groupId>io.micrometer</groupId>
 			<artifactId>micrometer-tracing-bridge-otel</artifactId>
 		</dependency>
@@ -84,7 +84,7 @@
 		<dependency>
 			<groupId>io.opentelemetry</groupId>
 			<artifactId>opentelemetry-exporter-zipkin</artifactId>
-		</dependency>
+		</dependency>-->
 
 	</dependencies>
 	<dependencyManagement>
